@@ -1,11 +1,11 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>The Aircraft</title>
+		<title>The Aircraft War</title>
 	</head>
 
-	<body>
+	<body style="background-color: black;">
 		<div id="stage" style="margin: 0 auto; width: 480px; height: 650px; text-align: center; vertical-align: middle" >
 			<canvas id="canvas" style="border:0px solid red;" width="480" height="650">
 				
@@ -76,8 +76,8 @@
 			h[5] = new Image();
 			h[5].src = "images/hero_blowup_n4.png";
 			
-			var copyright = new Image();
-			copyright.src = "images/shoot_copyright.png";
+			var gameName = new Image();
+			gameName.src = "images/game_name.png";
 			// creating pausing picture
 			var pause = new Image();
 			pause.src = "images/game_pause_nor.png";
@@ -116,7 +116,7 @@
 						sky.step();
 						var x = 20;
 						var y = 130;
-						ctx.drawImage(copyright, x, y);
+						ctx.drawImage(gameName, x, y);
 						break;
 					case RUNNING:
 						paintComponent(ctx);
@@ -489,6 +489,7 @@
 				}
 			}
 		</script>
+		<p style="text-align:center;font-size: 25px;color:#E83680;">Designed By: &nbsp; Jonathan Xiang</p>
 	</body>
 </html>
 
